@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aritmeticke operacije</title>
+  </head>
+  <body>
+    <script>
+      var br1 = parseInt(prompt("Unesite prvi broj:"));
+      var operacija = prompt("Unesite operaciju(+, -, *, ili /):");
+      var br2 = parseInt(prompt("Unesite drugi broj:"));
+
+      switch (operacija) {
+        case "+":
+          function Sabiranje() {
+            return br1 + br2;
+          }
+          alert("Vas rezultat je: " + Sabiranje());
+          break;
+        case "-":
+          function Oduzimanje() {
+            return br1 - br2;
+          }
+          alert("Vas rezultat je: " + Oduzimanje());
+          break;
+        case "*":
+          function Mnozenje() {
+            return br1 * br2;
+          }
+          alert("Vas rezultat je: " + Mnozenje());
+          break;
+        case "/":
+          function Deljenje() {
+            return br1 / br2;
+          }
+          alert("Vas rezultat je: " + Deljenje());
+          break;
+        default:
+          alert("Nepravilna operacija");
+          break;
+      }
+    </script>
+  </body>
+</html>
